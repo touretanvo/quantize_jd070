@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "touretanvo-quantize_jd070"
+version = "0.1.0"
+description = "按结构键把条目聚类，标出量化与稀疏化研究员·合成数据的质量分水岭上的同组项与各组的代表样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "touretanvo" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://touretanvo.github.io"
+Repository = "https://github.com/touretanvo/quantize_jd070"
+Issues = "https://github.com/touretanvo/quantize_jd070/issues"
+
+[project.scripts]
+quantize_jd070 = "quantize_jd070:main"
+
+[tool.setuptools]
+py-modules = ["quantize_jd070"]
